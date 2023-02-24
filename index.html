@@ -1,0 +1,448 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tic Tac Toe</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<!-- Declare all javascript functions needed -->
+	<script>
+	
+	//Functions for each square on each turn
+	function play_turn_s1()
+	{
+		if (currentPlayer == 0) 
+		{
+			document.getElementById("s1").textContent = "X";
+			document.getElementById("s1").disabled = true;
+			currentPlayer = 1;
+		}
+		else
+		{
+			document.getElementById("s1").textContent = "O";
+			document.getElementById("s1").disabled = true;
+			currentPlayer = 0;
+		}
+	}
+	
+	function play_turn_s2()
+	{
+		if (currentPlayer == 0) 
+		{
+			document.getElementById("s2").textContent = "X";
+			document.getElementById("s2").disabled = true;
+			currentPlayer = 1;
+		}
+		else
+		{
+			document.getElementById("s2").textContent = "O";
+			document.getElementById("s2").disabled = true;
+			currentPlayer = 0;
+		}
+	}
+	
+	function play_turn_s3()
+	{
+		if (currentPlayer == 0) 
+		{
+			document.getElementById("s3").textContent = "X";
+			document.getElementById("s3").disabled = true;
+			currentPlayer = 1;
+		}
+		else
+		{
+			document.getElementById("s3").textContent = "O";
+			document.getElementById("s3").disabled = true;
+			currentPlayer = 0;
+		}
+	}
+	
+	function play_turn_s4()
+	{
+		if (currentPlayer == 0) 
+		{
+			document.getElementById("s4").textContent = "X";
+			document.getElementById("s4").disabled = true;
+			currentPlayer = 1;
+		}
+		else
+		{
+			document.getElementById("s4").textContent = "O";
+			document.getElementById("s4").disabled = true;
+			currentPlayer = 0;
+		}
+	}
+	
+	function play_turn_s5()
+	{
+		if (currentPlayer == 0) 
+		{
+			document.getElementById("s5").textContent = "X";
+			document.getElementById("s5").disabled = true;
+			currentPlayer = 1;
+		}
+		else
+		{
+			document.getElementById("s5").textContent = "O";
+			document.getElementById("s5").disabled = true;
+			currentPlayer = 0;
+		}
+	}
+	
+	function play_turn_s6()
+	{
+		if (currentPlayer == 0) 
+		{
+			document.getElementById("s6").textContent = "X";
+			document.getElementById("s6").disabled = true;
+			currentPlayer = 1;
+		}
+		else
+		{
+			document.getElementById("s6").textContent = "O";
+			document.getElementById("s6").disabled = true;
+			currentPlayer = 0;
+		}
+	}
+	
+	
+	function play_turn_s7()
+	{
+		if (currentPlayer == 0) 
+		{
+			document.getElementById("s7").textContent = "X";
+			document.getElementById("s7").disabled = true;
+			currentPlayer = 1;
+		}
+		else
+		{
+			document.getElementById("s7").textContent = "O";
+			document.getElementById("s7").disabled = true;
+			currentPlayer = 0;
+		}
+	}
+	
+	function play_turn_s8()
+	{
+		if (currentPlayer == 0) 
+		{
+			document.getElementById("s8").textContent = "X";
+			document.getElementById("s8").disabled = true;
+			currentPlayer = 1;
+		}
+		else
+		{
+			document.getElementById("s8").textContent = "O";
+			document.getElementById("s8").disabled = true;
+			currentPlayer = 0;
+		}
+	}
+	
+	function play_turn_s9()
+	{
+		if (currentPlayer == 0) 
+		{
+			document.getElementById("s9").textContent = "X";
+			document.getElementById("s9").disabled = true;
+			currentPlayer = 1;
+		}
+		else
+		{
+			document.getElementById("s9").textContent = "O";
+			document.getElementById("s9").disabled = true;
+			currentPlayer = 0;
+		}
+	}
+	
+	//Check after each turn if someone has won or they've tied
+	function between_turns()
+	{
+		//Store the letter on each square in variables
+		s1 = document.getElementById("s1").textContent;
+		s2 = document.getElementById("s2").textContent;
+		s3 = document.getElementById("s3").textContent;
+		s4 = document.getElementById("s4").textContent;
+		s5 = document.getElementById("s5").textContent;
+		s6 = document.getElementById("s6").textContent;
+		s7 = document.getElementById("s7").textContent;
+		s8 = document.getElementById("s8").textContent;
+		s9 = document.getElementById("s9").textContent;
+		
+		//Check all winning combinations for Player X
+		if (s1 == "X" && s2 == "X" && s3 == "X")
+		{
+			document.getElementById("display").value = "Player X Wins!";
+			document.getElementById("s4").disabled = true;
+			document.getElementById("s5").disabled = true;
+			document.getElementById("s6").disabled = true;
+			document.getElementById("s7").disabled = true;
+			document.getElementById("s8").disabled = true;
+			document.getElementById("s9").disabled = true;
+		} else if (s4 == "X" && s5 == "X" && s6 == "X")
+		{
+			document.getElementById("display").value = "Player X Wins!";
+			document.getElementById("s1").disabled = true;
+			document.getElementById("s2").disabled = true;
+			document.getElementById("s3").disabled = true;
+			document.getElementById("s7").disabled = true;
+			document.getElementById("s8").disabled = true;
+			document.getElementById("s9").disabled = true;
+		} else if (s7 == "X" && s8 == "X" && s9 == "X")
+		{
+			document.getElementById("display").value = "Player X Wins!";
+			document.getElementById("s1").disabled = true;
+			document.getElementById("s2").disabled = true;
+			document.getElementById("s3").disabled = true;
+			document.getElementById("s4").disabled = true;
+			document.getElementById("s5").disabled = true;
+			document.getElementById("s6").disabled = true;
+		} else if (s1 == "X" && s4 == "X" && s7 == "X")
+		{
+			document.getElementById("display").value = "Player X Wins!";
+			document.getElementById("s2").disabled = true;
+			document.getElementById("s3").disabled = true;
+			document.getElementById("s5").disabled = true;
+			document.getElementById("s6").disabled = true;
+			document.getElementById("s8").disabled = true;
+			document.getElementById("s9").disabled = true;
+		} else if (s2 == "X" && s5 == "X" && s8 == "X")
+		{
+			document.getElementById("display").value = "Player X Wins!";
+			document.getElementById("s1").disabled = true;
+			document.getElementById("s3").disabled = true;
+			document.getElementById("s4").disabled = true;
+			document.getElementById("s6").disabled = true;
+			document.getElementById("s7").disabled = true;
+			document.getElementById("s9").disabled = true;
+		} else if (s3 == "X" && s6 == "X" && s9 == "X")
+		{
+			document.getElementById("display").value = "Player X Wins!";
+			document.getElementById("s1").disabled = true;
+			document.getElementById("s2").disabled = true;
+			document.getElementById("s4").disabled = true;
+			document.getElementById("s5").disabled = true;
+			document.getElementById("s7").disabled = true;
+			document.getElementById("s8").disabled = true;
+		} else if (s1 == "X" && s5 == "X" && s9 == "X")
+		{
+			document.getElementById("display").value = "Player X Wins!";
+			document.getElementById("s2").disabled = true;
+			document.getElementById("s3").disabled = true;
+			document.getElementById("s4").disabled = true;
+			document.getElementById("s6").disabled = true;
+			document.getElementById("s7").disabled = true;
+			document.getElementById("s8").disabled = true;
+		} else if (s3 == "X" && s5 == "X" && s7 == "X")
+		{
+			document.getElementById("display").value = "Player X Wins!";
+			document.getElementById("s1").disabled = true;
+			document.getElementById("s2").disabled = true;
+			document.getElementById("s4").disabled = true;
+			document.getElementById("s6").disabled = true;
+			document.getElementById("s8").disabled = true;
+			document.getElementById("s9").disabled = true;
+		}
+		
+		//Check all winning combinations for Player O
+		else if (s1 == "O" && s2 == "O" && s3 == "O")
+		{
+			document.getElementById("display").value = "Player O Wins!";
+			document.getElementById("s4").disabled = true;
+			document.getElementById("s5").disabled = true;
+			document.getElementById("s6").disabled = true;
+			document.getElementById("s7").disabled = true;
+			document.getElementById("s8").disabled = true;
+			document.getElementById("s9").disabled = true;
+		} else if (s4 == "O" && s5 == "O" && s6 == "O")
+		{
+			document.getElementById("display").value = "Player O Wins!";
+			document.getElementById("s1").disabled = true;
+			document.getElementById("s2").disabled = true;
+			document.getElementById("s3").disabled = true;
+			document.getElementById("s7").disabled = true;
+			document.getElementById("s8").disabled = true;
+			document.getElementById("s9").disabled = true;
+		} else if (s7 == "O" && s8 == "O" && s9 == "O")
+		{
+			document.getElementById("display").value = "Player O Wins!";
+			document.getElementById("s1").disabled = true;
+			document.getElementById("s2").disabled = true;
+			document.getElementById("s3").disabled = true;
+			document.getElementById("s4").disabled = true;
+			document.getElementById("s5").disabled = true;
+			document.getElementById("s6").disabled = true;
+		} else if (s1 == "O" && s4 == "O" && s7 == "O")
+		{
+			document.getElementById("display").value = "Player O Wins!";
+			document.getElementById("s2").disabled = true;
+			document.getElementById("s3").disabled = true;
+			document.getElementById("s5").disabled = true;
+			document.getElementById("s6").disabled = true;
+			document.getElementById("s8").disabled = true;
+			document.getElementById("s9").disabled = true;
+		} else if (s2 == "O" && s5 == "O" && s8 == "O")
+		{
+			document.getElementById("display").value = "Player O Wins!";
+			document.getElementById("s1").disabled = true;
+			document.getElementById("s3").disabled = true;
+			document.getElementById("s4").disabled = true;
+			document.getElementById("s6").disabled = true;
+			document.getElementById("s7").disabled = true;
+			document.getElementById("s9").disabled = true;
+		} else if (s3 == "O" && s6 == "O" && s9 == "O")
+		{
+			document.getElementById("display").value = "Player O Wins!";
+			document.getElementById("s1").disabled = true;
+			document.getElementById("s2").disabled = true;
+			document.getElementById("s4").disabled = true;
+			document.getElementById("s5").disabled = true;
+			document.getElementById("s7").disabled = true;
+			document.getElementById("s8").disabled = true;
+		} else if (s1 == "O" && s5 == "O" && s9 == "O")
+		{
+			document.getElementById("display").value = "Player O Wins!";
+			document.getElementById("s2").disabled = true;
+			document.getElementById("s3").disabled = true;
+			document.getElementById("s4").disabled = true;
+			document.getElementById("s6").disabled = true;
+			document.getElementById("s7").disabled = true;
+			document.getElementById("s8").disabled = true;
+		} else if (s3 == "O" && s5 == "O" && s7 == "O")
+		{
+			document.getElementById("display").value = "Player O Wins!";
+			document.getElementById("s1").disabled = true;
+			document.getElementById("s2").disabled = true;
+			document.getElementById("s4").disabled = true;
+			document.getElementById("s6").disabled = true;
+			document.getElementById("s8").disabled = true;
+			document.getElementById("s9").disabled = true;
+		} 
+		
+		//Check if all squares are filled with no winner - if so, it's a tie
+		else if (document.getElementById("s1").disabled
+				&& document.getElementById("s2").disabled
+				&& document.getElementById("s3").disabled
+				&& document.getElementById("s4").disabled
+				&& document.getElementById("s5").disabled
+				&& document.getElementById("s6").disabled
+				&& document.getElementById("s7").disabled
+				&& document.getElementById("s8").disabled
+				&& document.getElementById("s9").disabled) 
+		{
+			document.getElementById("display").value = "Tie Game";
+		} 
+		
+		//Move on with the next turn
+		else
+		{
+			if (currentPlayer == 0)
+			{
+				document.getElementById("display").value = "Player X's Turn";
+			} else
+			{
+				document.getElementById("display").value = "Player O's Turn";
+			}
+		}
+	}
+	
+	//Function to reset the board so that a fresh game can be played
+	function reset_function()
+	{
+		for (let i = 1; i <= 9; i++)
+		{
+			document.getElementById("s"+i).textContent = "";
+			document.getElementById("s"+i).disabled = false;
+		}
+		
+		document.getElementById("display").value = "Player X's Turn";
+		currentPlayer = 0;
+	}
+	
+    </script>
+	
+</head>
+<body>
+	<h1>Tic Tac Toe!</h1>
+	<br>
+	
+	<input type = "button" id = "display" value = "Player X's Turn">
+	
+	<!-- Create the grid with squares as elements-->
+    <div class="grid">
+		<script>
+		var currentPlayer = 0;
+		
+		//Turn the grid into an array so that squares can be pushed onto it
+		var grid_arr = document.getElementsByClassName("grid")[0];
+		
+		//For each square, give it an id and event handler functions
+		for (let i = 1; i <=9; i++)
+		{
+			var square = document.createElement("button");
+			square.id = "s"+i;
+			
+			if (i == 1)
+			{
+				square.onclick = function(){
+					play_turn_s1();
+					between_turns();
+				}
+			} else if (i == 2)
+			{
+				square.onclick = function(){
+					play_turn_s2();
+					between_turns();
+				}
+			} else if (i == 3)
+			{
+				square.onclick = function(){
+					play_turn_s3();
+					between_turns();
+				}
+			} else if (i == 4)
+			{
+				square.onclick = function(){
+					play_turn_s4();
+					between_turns();
+				}
+			} else if (i == 5)
+			{
+				square.onclick = function(){
+					play_turn_s5();
+					between_turns();
+				}
+			} else if (i == 6)
+			{
+				square.onclick = function(){
+					play_turn_s6();
+					between_turns();
+				}
+			} else if (i == 7)
+			{
+				square.onclick = function(){
+					play_turn_s7();
+					between_turns();
+				}
+			} else if (i == 8)
+			{
+				square.onclick = function(){
+					play_turn_s8();
+					between_turns();
+				}
+			} else if (i == 9)
+			{
+				square.onclick = function(){
+					play_turn_s9();
+					between_turns();
+				}
+			}
+			
+			//Add the square to the array
+			grid_arr.append(square);
+		}
+		
+		</script>
+    </div>
+	
+	<input type = "button" id = "reset" value = "Click to Play Again" onclick = "reset_function()">
+</body>
+</html>
