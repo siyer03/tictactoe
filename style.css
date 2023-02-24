@@ -1,0 +1,47 @@
+html,body {font-size: 25px; color: #000000; font-family: "Gill Dans", 
+"Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", "Helvetica", "Aria",
+"sans-serif"}
+h1 {top: 0; width: 100%}
+h1 {text-align: center; color: #000000}
+h1 {font-size: 50px;}
+body {position: relative;}
+body {text-align: center;}
+html {background-image: linear-gradient(#EDEDED, #BFD5E7);}
+
+.grid {
+	width: 500px;
+	height: 300px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+	background-color: #EDEDED;
+	border: 2px solid black;
+}
+
+#s1, #s2, #s3, #s4, #s5, #s6, #s7, #s8, #s9 {
+	height: 80px;
+	margin: 10px 10px 10px 10px;
+	border: 1px solid black;
+	position: relative;
+	font-size: 30px;
+	text-align: center;
+    background-color: #B4D6F1;
+	display: inline-block;
+	color: #000000;
+}
+
+#display {
+	margin: 0px 10px 20px 10px;
+	background-color: #B4D6F1;
+	width: 300px;
+	height: 75px;
+	font-size: 30px;
+}
+
+#reset {
+	margin: 20px 10px 10px 10px;
+	background-color: #B4D6F1;
+	width: 300px;
+	height: 75px;
+	font-size: 30px;
+}
